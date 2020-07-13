@@ -3,6 +3,7 @@
 This is a customized firmware for the Artillery Sidewinder X1 3D printer, utilizing BigTreeTech SKR1.4 Turbo main board and TMC2209 stepper drivers.
 
   - The latest compiled firmware can be found in the root directory and is called [firmware.bin](/firmware.bin) 
+  - You can find the latest [Configuration.h](/Marlin/Configuration.h)  and [Configuration_adv.h](/Marlin/Configuration_adv.h) files in the [Marlin](/Marlin) subfolder.
   
   # Marlin 3D Printer Firmware
 
