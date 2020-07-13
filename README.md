@@ -12,6 +12,8 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
   - I also received a lot of great help along the way from members of the 3D printing community on the [3D Print Beginner](https://discord.gg/NAdqZKh), [Artillery3D](https://discord.gg/vCh4BK), and [Marlin](https://discord.gg/WZ6Nb2) Discord servers. 
   - And of course, the tramendous work of everyone who is contributing to the development of the [Marlin](https://marlinfw.org/) firmware.
   
+  ___
+  
   # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
