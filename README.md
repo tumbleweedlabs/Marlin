@@ -8,9 +8,10 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
   - You can find the latest [Configuration.h](/Marlin/Configuration.h)  and [Configuration_adv.h](/Marlin/Configuration_adv.h) files in the [Marlin](/Marlin) subfolder.
 
 ### Credits
-  - I owe much of the credit for this firmware to Chanh Phuong's excellent writeup. You can find the complete article over at [3dchanh.com](https://3dchanh.com/x1-articles/f/skr-v14-turbo-upgrade-part-1-%E2%80%93-what%E2%80%99s-needed)
+  - I owe much of the credit for this firmware to Chanh Phuong's [excellent writeup](https://3dchanh.com/x1-articles/f/skr-v14-turbo-upgrade-part-1-%E2%80%93-what%E2%80%99s-needed).
+  - And to the work of [3D Print Beginner](https://3dprintbeginner.com/skr-1-3-upgrade-sidewinder-x1/#Marlin_203_firmware_for_SKR_13_on_Sidewinder_X1) who is an absolute wealth of 3D printing knowledge. 
   - I also received a lot of great help along the way from members of the 3D printing community on the [3D Print Beginner](https://discord.gg/NAdqZKh), [Artillery3D](https://discord.gg/vCh4BK), and [Marlin](https://discord.gg/WZ6Nb2) Discord servers. 
-  - And of course, the tramendous work of everyone who is contributing to the development of the [Marlin](https://marlinfw.org/) firmware.
+  - And of course, a HUGE thanks to the tramendous work of everyone who has contributed to the development of the [Marlin Firmware](https://marlinfw.org/).
   
   ___
   
