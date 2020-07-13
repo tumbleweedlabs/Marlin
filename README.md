@@ -1,4 +1,10 @@
-# Marlin 3D Printer Firmware
+# TWL-SX1-SKR1.4-TMC2209 Firmware
+
+This is a customized firmware for the Artillery Sidewinder X1 3D printer, utilizing BigTreeTech SKR1.4 Turbo main board and TMC2209 stepper drivers.
+
+  - The latest compiled firmware can be found in the root directory and is called [firmware.bin](/firmware.bin) 
+  
+  # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
 ![GitHub contributors](https://img.shields.io/github/contributors/marlinfirmware/marlin.svg)
