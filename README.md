@@ -1,8 +1,10 @@
 # Tumbleweed Labs
-## TWL-SX1-SKR1.4T-TMC2209 Firmware (V0.1.2 Alpha)
+## TWL-SX1-SKR1.4T-TMC2209 Firmware
 
 ### Attention!
 The TWL firmware is based on Marlin's latest Bug Fix commit. Please head over to the bugfix-2.0.x branch [located here](https://github.com/tumbleweedlabs/TWL-SX1-SKR1.4T-TMC2209-Marlin-Firmware-/tree/bugfix-2.0.x).
+
+___
 
 # Marlin 3D Printer Firmware
 
