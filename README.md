@@ -8,8 +8,8 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
   - You can find the latest [Configuration.h](/Marlin/Configuration.h)  and [Configuration_adv.h](/Marlin/Configuration_adv.h) files in the [Marlin](/Marlin) subfolder.
   
 ### Changes In This Release 
-	- Adjusted Junction Deviation Factor (Nozzle: 0.4, Jerk: 10.0, Accel: 1500). Resulting in JUNCTION_DEVIATION_MM 0.026. 
-  - Disabled JD_SMALL_SEGMENTS
+- Adjusted Junction Deviation Factor (Nozzle: 0.4, Jerk: 10.0, Accel: 1500). Resulting in JUNCTION_DEVIATION_MM 0.026. 
+- Disabled JD_SMALL_SEGMENTS
   ..-Was advised this could be causing problems with Junction Deviation
 	- Enable S_CURVE_ACCELLERATION.
 	- Enabled EXPERIEMENTAL_SCURVE to allow S_CURVE_ACCELLERATION be compatible with LINEAR_ADVANCE.
