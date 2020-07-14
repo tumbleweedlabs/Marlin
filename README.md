@@ -1,5 +1,5 @@
 # Tumbleweed Labs
-## TWL-SX1-SKR1.4T-TMC2209 Firmware (V0.1.2 Alpha)
+## TWL-SX1-SKR1.4T-TMC2209 Marlin Firmware (V0.1.2 Alpha)
 
 ### Summary
 This is a customized firmware for the Artillery Sidewinder X1 3D printer, utilizing BigTreeTech SKR1.4 Turbo main board and TMC2209 stepper drivers.
