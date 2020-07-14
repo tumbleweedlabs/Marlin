@@ -10,23 +10,23 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
 ### Changes In This Release 
 - Adjusted Junction Deviation Factor (Nozzle: 0.4, Jerk: 10.0, Accel: 1500). Resulting in JUNCTION_DEVIATION_MM 0.026. 
 - Disabled JD_SMALL_SEGMENTS
-  ..-Was advised this could be causing problems with Junction Deviation
-	- Enable S_CURVE_ACCELLERATION.
-	- Enabled EXPERIEMENTAL_SCURVE to allow S_CURVE_ACCELLERATION be compatible with LINEAR_ADVANCE.
-	- Adjusted DEFAULT_MAX_FEEDRATE and DEFAULT_MAX_ACCELERATION. 
-	- Enabled LEVEL_BED_CORNERS
-	- Enabled ADVANCE_PAUSE_FEATURE (M600)
-  ..- NOTE: This feature not currently working.
-	- Enabled NOZZLE_PARK_FEATURE 
-  ..- NOTE: This bit is working though.
-	- Revised E0 steps to 429.91 post-calibration
-  ..- NOTE: This value is specific to my machine. YMMV.
-	- Set bed size to 300x300
-	- Added Z probe offsets based on results measured with calipers
-	- Set PID information in firmware
-  ..- NOTE: This value is specific to my machine. YMMV.
-	- Adjusted Z_PROBE_LOW_POINT to make BLTouch less prone to throwing errors when leveling.
-  - Reduced HOME_CURRENT to improving homing reliability and decrease mechanical impact
+	-Was advised this could be causing problems with Junction Deviation
+- Enable S_CURVE_ACCELLERATION.
+- Enabled EXPERIEMENTAL_SCURVE to allow S_CURVE_ACCELLERATION be compatible with LINEAR_ADVANCE.
+- Adjusted DEFAULT_MAX_FEEDRATE and DEFAULT_MAX_ACCELERATION. 
+- Enabled LEVEL_BED_CORNERS
+- Enabled ADVANCE_PAUSE_FEATURE (M600)
+	- NOTE: This feature not currently working.
+- Enabled NOZZLE_PARK_FEATURE 
+	- NOTE: This bit is working though.
+- Revised E0 steps to 429.91 post-calibration
+	- NOTE: This value is specific to my machine. YMMV.
+- Set bed size to 300x300
+- Added Z probe offsets based on results measured with calipers
+- Set PID information in firmware
+	- NOTE: This value is specific to my machine. YMMV.
+- Adjusted Z_PROBE_LOW_POINT to make BLTouch less prone to throwing errors when leveling.
+- Reduced HOME_CURRENT to improving homing reliability and decrease mechanical impact
 
 ### Credits
   - I owe much of the credit for this firmware to Chanh Phuong's [excellent writeup](https://3dchanh.com/x1-articles/f/skr-v14-turbo-upgrade-part-1-%E2%80%93-what%E2%80%99s-needed).
