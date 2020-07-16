@@ -16,9 +16,7 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
 - Adjusted DEFAULT_MAX_FEEDRATE and DEFAULT_MAX_ACCELERATION. 
 - Enabled LEVEL_BED_CORNERS
 - Enabled ADVANCE_PAUSE_FEATURE (M600)
-	- NOTE: This feature not currently working.
 - Enabled NOZZLE_PARK_FEATURE 
-	- NOTE: This bit is working though.
 - Revised E0 steps to 429.91 post-calibration
 	- NOTE: This value is specific to my machine. YMMV.
 - Set bed size to 300x300
