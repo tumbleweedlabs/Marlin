@@ -16,20 +16,21 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
 - Enabled PID_EDIT_MENU allowing setting of PID values from LCD
 - Enabled PID_AUTOTUNE_MENU allows running of PID test from LCD
 - Adjust NOZZLE_TO_PROBE_OFFSET { 39, -41, -2.5}
-	- This matches the JL Designs fan duct 
-	- https://cults3d.com/en/3d-model/tool/artillery-sidewinder-volcano-v3-46-4020-fan-duct-cfd-stp
+	- This matches the [JL Designs fan duct](https://cults3d.com/en/3d-model/tool/artillery-sidewinder-volcano-v3-46-4020-fan-duct-cfd-stp)
 - Adjusted Z_AFTER_PROBING to 0 to eliminate unnecessary Z movement during startup
 
-CONFIGURATION_ADV.H
-	- Enabled FAN_KICKSTART_TIME 100
-	- Enabled SENSORLESS_BACKOFF_MM {2, 2}
-	- Enabled LCD_INFO_MENU
-	- Enabled LCD_SHOW_E_TOTAL
-	- Enabled ROTATE_PROGRESS_DISPLAY
-	- Set LIN_ADVANCE_K to 0.2 by default
-		○ Note this is my machines value for both PLA and PETG
-	- Enabled EMERGENCY_PARSER
-	- Adjusted PAUSE_PARK_NOZZLE_TIMEOUT to 300s
+#### CONFIGURATION_ADV.H
+- Enabled FAN_KICKSTART_TIME 100 to give the fan a chance to get moving
+- Enabled SENSORLESS_BACKOFF_MM {2, 2} to back off extents before homing
+- Enabled LCD_INFO_MENU to show machine information via LCD
+- Enabled LCD_SHOW_E_TOTAL to show total filament used during a print
+- Enabled ROTATE_PROGRESS_DISPLAY to cycle through Progress, Elapsed Time, Remaining Time of print
+- Set LIN_ADVANCE_K to 0.2 by default
+	- Note this is my machines value for both PLA and PETG
+- Enabled EMERGENCY_PARSER to allow certain commands to be run immediately
+	- This currently allows M108, M112, M410, and M876 to bypass the current print job 
+- Adjusted PAUSE_PARK_NOZZLE_TIMEOUT to 300s to allow more time to get to the machine for filament changes. 
+	- Note FILAMENT_RUNOUT_SENSOR coming in next release
 
 ### Previous Releases
 #### V0.1.2 Alpha
