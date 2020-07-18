@@ -1,5 +1,5 @@
 # Tumbleweed Labs
-## TWL-SX1-SKR1.4T-TMC2209 Marlin Firmware (V0.1.2 Alpha)
+## TWL-SX1-SKR1.4T-TMC2209 Marlin Firmware (V0.2.0 Beta)
 
 ### Summary
 This is a customized firmware for the Artillery Sidewinder X1 3D printer, utilizing BigTreeTech SKR1.4 Turbo main board and TMC2209 stepper drivers.
@@ -7,7 +7,32 @@ This is a customized firmware for the Artillery Sidewinder X1 3D printer, utiliz
   - The latest compiled firmware can be found in the root directory and is called [firmware.bin](/firmware.bin) 
   - You can find the latest [Configuration.h](/Marlin/Configuration.h)  and [Configuration_adv.h](/Marlin/Configuration_adv.h) files in the [Marlin](/Marlin) subfolder.
   
-### Changes In This Release 
+### Changes In This Release (V0.2.0 Beta)
+#### CONFIGURATION.H
+- Disabled Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+- Enabled Z_MIN_PROBE_PIN P0_10
+	- Note this differs from many build tutorials. Make sure you land the white wire to the correct pin!
+- My Z min endstop pin is defective and the SKR has a probe port so moving this made sense. 
+- Enabled PID_EDIT_MENU allowing setting of PID values from LCD
+- Enabled PID_AUTOTUNE_MENU allows running of PID test from LCD
+- Adjust NOZZLE_TO_PROBE_OFFSET { 39, -41, -2.5}
+	- This matches the JL Designs fan duct 
+	- https://cults3d.com/en/3d-model/tool/artillery-sidewinder-volcano-v3-46-4020-fan-duct-cfd-stp
+- Adjusted Z_AFTER_PROBING to 0 to eliminate unnecessary Z movement during startup
+
+CONFIGURATION_ADV.H
+	- Enabled FAN_KICKSTART_TIME 100
+	- Enabled SENSORLESS_BACKOFF_MM {2, 2}
+	- Enabled LCD_INFO_MENU
+	- Enabled LCD_SHOW_E_TOTAL
+	- Enabled ROTATE_PROGRESS_DISPLAY
+	- Set LIN_ADVANCE_K to 0.2 by default
+		○ Note this is my machines value for both PLA and PETG
+	- Enabled EMERGENCY_PARSER
+	- Adjusted PAUSE_PARK_NOZZLE_TIMEOUT to 300s
+
+### Previous Releases
+#### V0.1.2 Alpha
 - Adjusted Junction Deviation Factor (Nozzle: 0.4, Jerk: 10.0, Accel: 1500). Resulting in JUNCTION_DEVIATION_MM 0.026. 
 - Disabled JD_SMALL_SEGMENTS
 	-Was advised this could be causing problems with Junction Deviation
