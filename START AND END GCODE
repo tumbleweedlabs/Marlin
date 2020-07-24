@@ -1,0 +1,32 @@
+; TWL SIDEWINDER X1 START GCODE
+M140 S[first_layer_bed_temperature] ; Set bed temp
+M104 S160 ; Heat the nozzle but not to the point filament oozes during probing
+M117 Homing Sidewinder X1
+G28 ; Home all axis
+M117 Waiting for bed temp
+M190 S[first_layer_bed_temperature] ; Wait for bed temp
+M117 Performing Auto Bed Level
+G29 ; Run mesh bed level
+M420 S1 Z5.0 ; Ensure mesh leveling is used and set fade height to 5mm
+G1 Z50.0 F6000 ; Move up 50mm at 6000mm/min
+M117 Waiting for nozzle temp
+M109 S[first_layer_temperature_0] ; Wait for all used extruders to reach temperature
+G92 E0 ; Reset extruder length to zero
+M117 Purging nozzle
+G1 X10.0 Y10 Z0.23 F5000.0 ; Go to edge of print area
+G1 X100 Y10 Z0.23 F1500.0 E15 ; Lay a line of filament to pressurize the nozzle
+G1 X100 Y11 Z0.23 F5000.0 ; Move to side a little
+G1 X10 Y11 Z0.23 F1500.0 E30 ; Draw a second line extruding even more filament
+G1 Y200 F10000 ; Sheer any goop off the nozzle
+G92 E0.0 ; Reset extruder position
+M117 Startup complete, happy printing!
+
+; TWL SIDEWINDER X1 END GCODE
+M140 S0; Turn off the bed heater
+M104 S0; Turn off the nozzle heater
+G91; Set relative positioning mode
+G1 E-10 F600; retract filament slightly
+G28 X; Home the X axis
+G90 ; Set all axes to absolute
+G0 Y280 F600; Bring the bed to the front for easy print removal
+M84; Turn off the motors
